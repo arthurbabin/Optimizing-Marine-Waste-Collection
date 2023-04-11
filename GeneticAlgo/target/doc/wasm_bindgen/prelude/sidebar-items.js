@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"attr":[["wasm_bindgen",""]],"trait":[["JsCast","A trait for checked and unchecked casting between JS types."]]};

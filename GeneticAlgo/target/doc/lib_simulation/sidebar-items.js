@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"fn":[["add",""]],"struct":[["Brain",""],["Collector",""],["Eye",""],["Sea",""],["Simulation",""],["Waste",""]]};
