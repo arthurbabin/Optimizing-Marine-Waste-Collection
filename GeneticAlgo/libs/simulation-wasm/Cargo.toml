@@ -1,0 +1,26 @@
+[package]
+name = "lib-simulation-wasm"
+version = "0.1.0"
+edition = "2021"
+
+
+ # Compiler transforms code into something, and crate-type determines what that something — also called an artifact — gets to be:
+ #
+ #    crate-type = ["bin"] means: compiler, pretty please produce a program
+ #    (e.g. an .exe file for Windows),
+ #
+ #    crate-type = ["lib"] means: compiler, pretty please produce a library
+ #    (e.g. a .dll file for Windows, .so for Linux).
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# wasm-bindgen provides types and macros that facilitate writing WebAssembly-aware code.
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+rand = "0.8"
+wasm-bindgen = { version = "0.2", features = ["serde-serialize"] }
+lib-simulation = { path = "../simulation" }
+getrandom = { version = "0.2", features = ["js"] }

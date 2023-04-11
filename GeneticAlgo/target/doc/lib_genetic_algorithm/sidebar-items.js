@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["Chromosome",""],["GaussianMutation",""],["GeneticAlgorithm",""],["RouletteWheelSelection",""],["Statistics",""],["UniformCrossover",""]],"trait":[["CrossoverMethod",""],["Individual",""],["MutationMethod",""],["SelectionMethod",""]]};
